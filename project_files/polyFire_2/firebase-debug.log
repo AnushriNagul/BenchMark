@@ -1,0 +1,36 @@
+[debug] [2017-07-25T20:27:36.425Z] ----------------------------------------------------------------------
+[debug] [2017-07-25T20:27:36.429Z] Command:      C:\Program Files\nodejs\node.exe C:\Users\anaguL\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2017-07-25T20:27:36.429Z] CLI Version:  3.9.1
+[debug] [2017-07-25T20:27:36.429Z] Platform:     win32
+[debug] [2017-07-25T20:27:36.429Z] Node Version: v6.11.0
+[debug] [2017-07-25T20:27:36.430Z] Time:         Tue Jul 25 2017 16:27:36 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-07-25T20:27:36.430Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-07-25T20:27:36.454Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-07-25T20:27:36.455Z] > authorizing via signed-in user
+[debug] [2017-07-25T20:27:36.460Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-07-25T20:27:36.460Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/HikehdfL2cwHKjYdEXrslPUYZiu5qzS4gxFsGmt0D1g',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Jul 25 2017 16:27:36 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-07-25T20:27:36.768Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-25T20:27:36.807Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/polyfire-286e7  
+ Tue Jul 25 2017 16:27:36 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-07-25T20:27:37.752Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-25T20:27:37.753Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/polyfire-286e7/tokens  
+ Tue Jul 25 2017 16:27:37 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-07-25T20:27:38.505Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\anaguL\project_files\polyFire_2'...
+[info] 
+[debug] [2017-07-25T20:27:38.509Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/polyfire-286e7  
+ Tue Jul 25 2017 16:27:38 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-07-25T20:27:38.955Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-25T20:27:38.956Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/635670626317/clients/_:getWebAppConfig  
+ Tue Jul 25 2017 16:27:38 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-07-25T20:27:39.491Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+

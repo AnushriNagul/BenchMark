@@ -1,0 +1,64 @@
+<link rel="import" href="bower_components/note-app-elements/na-elements.html">
+<link rel="import" href="bower_components/app-storage/app-indexeddb-mirror/app-indexeddb-mirror.html">
+<link rel="import" href="bower_components/polymerfire/polymerfire.html">
+<link rel="import" href="bower_components/paper-input/paper-input.html">
+
+<link rel="import" href="bower_components/login-fire/login-fire.html">
+<dom-module id="login-page">
+  <template>
+<!--    <style include="note-app-shared-styles"></style>
+      <na-toolbar
+    signed-in="[[signedIn]]"
+    on-sign-out="signOut">
+      </na-toolbar>
+          <na-login
+            on-sign-in="signIn"
+            signed-in="[[signedIn]]"
+            disabled="[[!online]]">
+        </na-login>-->
+<!--      <paper-input label="text input"></paper-input>-->
+      <style>
+      :host {
+        display: grid;
+        height: 1000px;
+        background-color: skyblue;
+          background-size: cover;
+        color: var(--container-text, blue);
+        background-image: var(--container-background, "default.png");
+
+        --container-background: url( 'doc.jpg');
+      }
+    </style>
+      <img src="logo.png" style="padding-top: 10cm; padding-left: 22cm; position: :absolute;height: auto; left: auto;" />
+      <firebase-app
+          name="miniHorizontalWideDemo"
+          api-key="AIzaSyD7vGHu6Kzoc6CuDz_YvH85JAXlQdOFCr8" 
+          auth-domain="polyfire-286e7.firebaseapp.com"
+          database-url="https://polyfire-286e7.firebaseio.com">
+    </firebase-app>
+    <login-fire mini horizontal email-password facebook anonymous google app-name="miniHorizontalWideDemo" user="{{user}}" signed-in="{{signedIn}}"></login-fire>
+      
+      <firebase-auth
+        id="auth"
+        app-name="notes"
+        provider="google"
+        signed-in="{{signedIn}}"
+        user="{{user}}">
+    </firebase-auth>
+      <h1>Welcome {{user.email}}</h1>
+      <a on-tap="_signOut">Sign Out</a>
+    </template>
+  <script>
+    Polymer({
+      is: 'login-page',
+      behaviors: [Polymer.NoteAppBehavior],
+        signIn: function() {
+      this.$.auth.signInWithPopup();
+            
+    },
+        _signOut: function(e){
+  this.$$('login-fire').signOut();
+}
+    });
+  </script>
+</dom-module>
